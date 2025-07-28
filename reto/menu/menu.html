@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú con Scroll - Bancolombia</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <!-- Menú de navegación fijo -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">BANCOLOMBIA</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" onclick="scrollToSection('inicio')">Inicio</a></li>
+                <li><a href="#productos" onclick="scrollToSection('productos')">Productos</a></li>
+                <li><a href="#servicios" onclick="scrollToSection('servicios')">Servicios</a></li>
+                <li><a href="#contacto" onclick="scrollToSection('contacto')">Contacto</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secciones de contenido -->
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="section">
+            <div class="container">
+                <h1>Bienvenido a Bancolombia</h1>
+                <p>Tu banco digital de confianza. Descubre todos nuestros productos y servicios diseñados para ti.</p>
+                <button class="btn-primary" onclick="scrollToSection('productos')">Ver Productos</button>
+            </div>
+        </section>
+
+        <!-- Sección Productos -->
+        <section id="productos" class="section">
+            <div class="container">
+                <h2>Nuestros Productos</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Cuenta de Ahorros</h3>
+                        <p>Ahorra de manera inteligente con beneficios exclusivos.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Tarjeta de Crédito</h3>
+                        <p>Accede a crédito con las mejores tasas del mercado.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Crédito Hipotecario</h3>
+                        <p>Haz realidad el sueño de tu casa propia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section id="servicios" class="section">
+            <div class="container">
+                <h2>Servicios Bancarios</h2>
+                <div class="services-list">
+                    <div class="service-item">
+                        <span class="icon">💳</span>
+                        <div>
+                            <h4>Transferencias</h4>
+                            <p>Transfiere dinero de forma rápida y segura</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <span class="icon">📱</span>
+                        <div>
+                            <h4>App Móvil</h4>
+                            <p>Gestiona tus finanzas desde tu celular</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <span class="icon">🏧</span>
+                        <div>
+                            <h4>Cajeros Automáticos</h4>
+                            <p>Red de cajeros en todo el país</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <h4>Línea de Atención</h4>
+                            <p>(01) 8000 9 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>atencion@bancolombia.com.co</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">🕒</span>
+                        <div>
+                            <h4>Horarios</h4>
+                            <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botón para volver al inicio -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToSection('inicio')">↑</button>
+    
+    <!-- Link para volver al índice -->
+    <div class="back-link">
+        <a href="../index.html">← Volver al inicio</a>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>

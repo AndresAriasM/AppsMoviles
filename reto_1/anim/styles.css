@@ -1,0 +1,112 @@
+body{
+    background-color:lightblue;
+  }
+  
+  #paisaje{
+    position:relative;
+    width:800px;
+    height:500px;
+    border:1px solid gray;
+    background:#00BFFF;
+    margin:30px auto;
+    overflow:hidden;
+  }
+  
+  .objeto{
+    position:absolute;
+  }
+  
+  #sol{
+    top:45px;
+    right:70px;
+    /* Animación: el sol brilla suavemente */
+    animation: brillar 3s ease-in-out infinite alternate;
+  }
+  
+  #nevado{
+    bottom:-17px;
+    left:-17px;
+  }
+  
+  #nevado2{
+    bottom:-17px;
+    right:-30px;
+  }
+  
+  #bici{
+    bottom:-25px;
+    left:350px;
+    z-index:1;
+    /* Animación: la bici se mueve de lado a lado */
+    animation: moverBici 10s linear infinite;
+  }
+  
+  #arbol{
+    right:80px;
+    bottom:-4px;
+    z-index:2;
+    /* Animación: el árbol se mece como si hubiera viento */
+    animation: mecerArbol 4s ease-in-out infinite alternate;
+  }
+  
+  #nube{
+    top: 60px;
+    left: 200px;
+    /* Animación: la nube flota lentamente */
+    animation: flotarNube 15s linear infinite;
+  }
+  
+  /* Definición de las animaciones */
+  
+  /* El sol crece y decrece suavemente */
+  @keyframes brillar {
+    0% { 
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    100% { 
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+  
+  /* La bici se mueve de izquierda a derecha */
+  @keyframes moverBici {
+    0% { 
+      left: -150px; 
+    }
+    100% { 
+      left: 850px; 
+    }
+  }
+  
+  /* El árbol se mece como si hubiera viento */
+  @keyframes mecerArbol {
+    0% { 
+      transform: rotate(-3deg); 
+    }
+    100% { 
+      transform: rotate(3deg); 
+    }
+  }
+  
+  /* La nube se mueve y flota suavemente */
+  @keyframes flotarNube {
+    0% { 
+      left: -150px;
+      transform: translateY(0px);
+    }
+    25% {
+      transform: translateY(-15px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    75% {
+      transform: translateY(-10px);
+    }
+    100% { 
+      left: 850px;
+      transform: translateY(0px);
+    }
+  }
