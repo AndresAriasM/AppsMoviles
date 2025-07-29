@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grasshopper - Learn to Code for Free</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/grasshopper-logo.png" alt="Grasshopper" class="logo-img">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Welcome to Grasshopper,</h1>
+                <div class="subtitle">the coding app for beginners</div>
+                <p>Learning to code opens new doors</p>
+                <a href="#features" class="cta-button">Start coding today</a>
+            </div>
+            <div class="hero-visual">
+                <div class="devices-container">
+                    <div class="laptop-device">
+                        <img src="images/laptop-mockup.png" alt="Grasshopper on laptop" class="laptop-img">
+                        <div class="laptop-screen">
+                            <img src="images/grasshopper-interface.png" alt="Grasshopper interface" class="interface-img">
+                        </div>
+                    </div>
+                    <div class="phone-device">
+                        <img src="images/phone-mockup.png" alt="Grasshopper on phone" class="phone-img">
+                        <div class="phone-screen">
+                            <img src="images/mobile-interface.png" alt="Mobile interface" class="mobile-interface-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <img src="images/grasshopper-character.png" alt="Grasshopper character" class="grasshopper-char">
+                    <div class="decorative-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2>The best way to start your coding adventure.</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icon-mobile-learning.png" alt="Mobile learning" class="feature-icon-img">
+                    </div>
+                    <h3>Learn with fun, quick lessons on your phone that teach you to write real JavaScript.</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icon-progressive.png" alt="Progressive learning" class="feature-icon-img">
+                    </div>
+                    <h3>Move through progressively challenging levels as you develop your abilities.</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icon-graduation.png" alt="Graduate skills" class="feature-icon-img">
+                    </div>
+                    <h3>Graduate with fundamental programming skills for your next step as a coder.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <h2>Grasshopper stories</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-avatar">
+                        <img src="images/avatar-brianna.jpg" alt="Brianna" class="avatar-img">
+                    </div>
+                    <div class="testimonial-text">"I like Grasshopper because it allows anyone with or without experience in coding to jump right in and have fun along the way."</div>
+                    <div class="testimonial-author">Brianna</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-avatar">
+                        <img src="images/avatar-michael.jpg" alt="Michael" class="avatar-img">
+                    </div>
+                    <div class="testimonial-text">"Grasshopper understands that coding can be intimidating, but it will also challenge you. It's exciting. It opens up a world for you."</div>
+                    <div class="testimonial-author">Michael</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-avatar">
+                        <img src="images/avatar-sarah.jpg" alt="Sarah" class="avatar-img">
+                    </div>
+                    <div class="testimonial-text">"That I can learn coding and that it's just something I can do has changed my mindset about what I'm capable of."</div>
+                    <div class="testimonial-author">Sarah</div>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-platform Section -->
+    <section class="cross-platform">
+        <div class="cross-platform-container">
+            <div class="platform-content">
+                <div class="platform-text">
+                    <h2>Learn to code anywhere.</h2>
+                    <p>Grasshopper is available on iOS, Android, and all web browsers. Your progress syncs seamlessly between devices.</p>
+                    <div class="platform-icons">
+                        <img src="images/icon-ios.png" alt="iOS" class="platform-icon">
+                        <img src="images/icon-android.png" alt="Android" class="platform-icon">
+                        <img src="images/icon-web.png" alt="Web" class="platform-icon">
+                    </div>
+                </div>
+                <div class="platform-visual">
+                    <img src="images/cross-platform-devices.png" alt="Cross platform devices" class="cross-platform-img">
+                    <div class="floating-grasshopper">
+                        <img src="images/grasshopper-small.png" alt="Grasshopper" class="small-grasshopper">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Practice Section -->
+    <section class="code-practice">
+        <div class="code-practice-container">
+            <div class="code-practice-content">
+                <div class="practice-icon">
+                    <img src="images/icon-code-practice.png" alt="Code practice" class="practice-icon-img">
+                </div>
+                <h2>Put your learning into practice with full projects on your laptop or tablet.</h2>
+                <div class="practice-dots">
+                    <span class="practice-dot active"></span>
+                    <span class="practice-dot"></span>
+                    <span class="practice-dot"></span>
+                    <span class="practice-dot"></span>
+                    <span class="practice-dot"></span>
+                </div>
+            </div>
+            <div class="code-visual">
+                <div class="code-devices">
+                    <div class="code-laptop">
+                        <img src="images/laptop-code.png" alt="Laptop with code" class="laptop-code-img">
+                    </div>
+                    <div class="code-phone">
+                        <img src="images/phone-code.png" alt="Phone with code" class="phone-code-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Concepts Section -->
+    <section class="learning-concepts">
+        <div class="concepts-container">
+            <h2>Learn concepts that apply to any programming language</h2>
+            <div class="concepts-grid">
+                <div class="concept-item">
+                    <div class="concept-icon">
+                        <img src="images/icon-fundamentals.png" alt="Fundamentals">
+                    </div>
+                    <span>Fundamentals</span>
+                </div>
+                <div class="concept-item">
+                    <div class="concept-icon">
+                        <img src="images/icon-animations.png" alt="Animations">
+                    </div>
+                    <span>Animations</span>
+                </div>
+                <div class="concept-item">
+                    <div class="concept-icon">
+                        <img src="images/icon-variables.png" alt="Using Variables">
+                    </div>
+                    <span>Using Variables</span>
+                </div>
+                <div class="concept-item">
+                    <div class="concept-icon">
+                        <img src="images/icon-strings.png" alt="String Manipulation">
+                    </div>
+                    <span>String Manipulation</span>
+                </div>
+                <div class="concept-item">
+                    <div class="concept-icon">
+                        <img src="images/icon-callbacks.png" alt="Callbacks">
+                    </div>
+                    <span>Callbacks</span>
+                </div>
+                <div class="concept-more">
+                    <span>and more...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="final-cta-container">
+            <h2>Get started on your adventure in coding with Grasshopper.</h2>
+            <div class="cta-buttons">
+                <a href="#" class="cta-btn cta-primary">Get Started</a>
+                <div class="app-download-buttons">
+                    <a href="#" class="app-button">
+                        <img src="images/app-store-badge.png" alt="Download on App Store" class="store-badge">
+                    </a>
+                    <a href="#" class="app-button">
+                        <img src="images/google-play-badge.png" alt="Get it on Google Play" class="store-badge">
+                    </a>
+                </div>
+            </div>
+            <div class="final-grasshopper">
+                <img src="images/grasshopper-final.png" alt="Grasshopper character" class="final-character">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Home</h3>
+                    <a href="#">What is Coding</a>
+                    <a href="#">About</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Email us</h3>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Terms of service</h3>
+                    <a href="#">Privacy policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Code with Google courses</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
